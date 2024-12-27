@@ -7,20 +7,27 @@ use std::path::Path;
 
 const DESC: &str = "By default it will use as much of the current terminal window as possible, while maintaining the aspect ratio of the input image. This can be overridden as follows.";
 
+/// Display images in the terminal
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = DESC)]
 pub struct TermpicArgs {
+    /// Width of the output image
     #[clap(short, long)]
     pub width: Option<u32>,
 
-    #[clap(short = 'l', long)]
+    /// Height of the output image
+    #[clap(short = 's', long)]
     pub height: Option<u32>,
 
-    #[clap(short, long, alias = "true-color")]
+    /// Use true colour (24-bit) output
+    #[clap(short, long, visible_alias = "true-color")]
     pub true_colour: bool,
 
+    /// Input file
+    #[clap(name = "FILE")]
     pub file: String,
 
+    /// Output file
     #[clap(short = 'o', long)]
     pub output: Option<String>,
 }

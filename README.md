@@ -6,7 +6,7 @@ Draw images in an ANSI terminal! Requires that your terminal can show ANSI colou
 
 ```sh
 cargo install termpic
-termpic <file> [--width <width>] [--height <height>] [--max-width <max-width>] [--max-height <max-height>] [--true-color|--true-colour]
+termpic <file> [--width <width>] [--height <height>] [--max-width <max-width>] [--max-height <max-height>] [--true-color|--true-colour] [--output <file>]
 ```
 
 ![buzz](https://cloud.githubusercontent.com/assets/4640028/13073384/9d46b2e2-d4f2-11e5-9218-09f1a05bf296.png)
