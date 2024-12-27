@@ -1,7 +1,10 @@
 [package]
 name = "termpic"
 description = "Fork of https://github.com/hopey-dishwasher/termpix"
-version = "1.0.0"
+documentation = "https://docs.rs/termpic"
+repository = "https://github.com/Its-Just-Nans/termpic"
+homepage = "https://github.com/Its-Just-Nans/termpic"
+version = "1.0.1"
 edition = "2021"
 license = "Apache-2.0"
 
